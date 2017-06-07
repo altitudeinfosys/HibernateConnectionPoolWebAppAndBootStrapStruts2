@@ -10,8 +10,8 @@
             org.hibernate.dialect.Oracle10gDialect
         </property>
         <property name="hibernate.connection.url">jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = sed0dbadm01-scan.tceq.texas.gov)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = devexa.tceq.texas.gov)))</property>
-        <property name="hibernate.connection.username">rc_user</property>
-        <property name="hibernate.connection.password">pas4cats</property>
+        <property name="hibernate.connection.username">user_name</property>
+        <property name="hibernate.connection.password">password</property>
         <!-- Connection Pool Size -->
         <!--<property name="hibernate.connection.pool_size">1</property>-->
 
