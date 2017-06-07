@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.altitudeinfosys.model.RcCounty" table="rc_county" >
+        <id name="cntyCd" type="string">
+            <column name="CNTY_CD" />
+        </id>
+        <property name="cnty" type="string">
+            <column name="CNTY" />
+        </property>
+        <property name="contractR" type="string">
+            <column name="CONTRACT_R" />
+        </property>
+        <property name="regionCd" type="string">
+            <column name="REGION_CD" />
+        </property>
+        <property name="regionCity" type="string">
+            <column name="REGION_CITY" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <action name="hello" class="com.altitudeinfosys.Action.HelloWorldAction">
+            <result>greeting.jsp</result>
+        </action>
+
+        <action name="addCounty" class="com.altitudeinfosys.Action.CountyAction" method="saveCounty">
+            <result>successCountySaved.jsp</result>
+        </action>
+        <action name="deleteCounty" class="com.altitudeinfosys.Action.CountyAction" method="deleteCounty">
+            <result>successCountyDeleted.jsp</result>
+        </action>
+        <action name="updateCounty" class="com.altitudeinfosys.Action.CountyAction" method="updateCounty">
+            <result>successCountyUpdated.jsp</result>
+        </action>
+        <action name="ajaxAction" class="com.altitudeinfosys.Action.AjaxJsonAction">
+            <result type="json">
+                <param name="excludeNullProperties">true</param>
+                <param name="noCache">true</param>
+            </result>
+        </action>
+    </package>
+
+</struts>

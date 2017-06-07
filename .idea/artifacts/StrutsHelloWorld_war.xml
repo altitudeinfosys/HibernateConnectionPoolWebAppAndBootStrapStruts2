@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="StrutsHelloWorld:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="struts-2.3-hello-world-example.war">
+      <element id="artifact" artifact-name="StrutsHelloWorld:war exploded" />
+    </root>
+  </artifact>
+</component>
